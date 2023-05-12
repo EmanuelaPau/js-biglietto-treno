@@ -20,9 +20,67 @@ main {
     width: 60%;
 }
 
+.title-train-company {
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.7rem;
+}
+
+.ticket-header-left {
+    background-color: #00aeee;
+    border-radius: 15px 0 25px 0;
+    height: 70px;
+    width: 40%;
+}
+
+.ticket-header-left img {
+    height: 70px;
+    margin-left: 10px;
+    mix-blend-mode: lighten;
+}
+
+.your-price-info {
+    background-color: rgb(241, 241, 241);
+    width: 80%;
+    padding: .2rem .5rem;
+    border-radius: 5px;
+}
+
+.ticket-header {
+    background-color: #00aeee;
+    border-radius: 0 15px 0 0;
+    height: 50px;
+    width: 100%;
+}
+
+.ticket-header h5 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.ticket-header-right {
+    background-color: #367797;
+    height: 50px;
+    width: 60%;
+}
+
+.ticket-header-right h2 {
+    color: white;
+    text-align: center;
+}
+
 .ticket-right {
     background-color: white;
     border-radius: 0 15px 15px 0;
     height: 280px;
     width: 40%;
+}
+
+.alert-text p {
+    width: 700px;
+    font-weight: 500;
+    background-color: rgb(243, 243, 115);
+    border-radius: 6px;
 }
