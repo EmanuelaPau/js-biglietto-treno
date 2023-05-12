@@ -1,5 +1,5 @@
 body {
-    background-color: antiquewhite;
+    background-color: #323a45
 }
 
 main {
@@ -76,6 +76,10 @@ main {
     border-radius: 0 15px 15px 0;
     height: 280px;
     width: 40%;
+}
+
+.qrcodecontainer {
+    width: 200px;
 }
 
 .alert-text p {
