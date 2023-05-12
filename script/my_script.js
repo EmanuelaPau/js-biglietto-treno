@@ -16,9 +16,20 @@ console.log(kilometers);
 const passengerAge = parseInt(prompt("quanti anni hai?"));
 console.log(passengerAge);
 
+// Verifica correttezza del campo Eta
+console.log(typeof passengerAge)
+if (isNaN(passengerAge)) {
+    console.log("C'è un errore nella compilazione dell'età")
+    document.getElementById("alert").innerHTML = `È stato rilevato un errore nel campo: età del passeggero. Per favore riscrivere l'età in forma numerica`;
+
+    throw new Error("Age was badly written!");
+}
+
+
 // Calc ticket price: 0.21 € al km)
 const fullTicketPrice = kilometers * 0.21;
 console.log(`Your not discounted ticket price is: ${fullTicketPrice} Euros`);
+
 
 // Add discounted ticket variable
 let discountedticketPrice;
@@ -34,8 +45,10 @@ if (passengerAge < 18) {
     // il prezzo rimane quello calcolato
 }
 
+// Fix result with two decimals
 discountedticketPrice = discountedticketPrice.toFixed(2);
 
 console.log(`Your discounted ticket price is: ${discountedticketPrice} Euros`);
 
-document.getElementById("your-ticket-price").innerHTML = `Your discounted ticket price is: ${discountedticketPrice}€`;
+// Print result to page 
+document.getElementById("your-ticket-price").innerHTML = `Il prezzo del tuo biglietto è: ${discountedticketPrice}€`;
