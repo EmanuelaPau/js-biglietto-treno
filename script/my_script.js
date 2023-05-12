@@ -24,13 +24,13 @@ console.log(`Your not discounted ticket price is: ${fullTicketPrice} Euros`);
 let discountedticketPrice;
 
 if (passengerAge < 18) {
-    let discountedticketPrice = fullTicketPrice - (fullTicketPrice * 0.2);
+    discountedticketPrice = fullTicketPrice - (fullTicketPrice * 0.2);
     // allora applica sconto del 20 % sul prezzo totale 
 } else if (passengerAge > 65) {
-    let discountedticketPrice = fullTicketPrice - (fullTicketPrice * 0.4);
+    discountedticketPrice = fullTicketPrice - (fullTicketPrice * 0.4);
     // allora applica sconto del 40 % sul prezzo totale 
 } else {
-    let discountedticketPrice = fullTicketPrice;
+    discountedticketPrice = fullTicketPrice;
     // il prezzo rimane quello calcolato
 }
 
