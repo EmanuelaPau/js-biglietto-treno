@@ -7,5 +7,11 @@
 // L'output del prezzo finale va messo fuori in forma umana in pagina (con massimo due decimali, per indicare centesimi sul prezzo).
 // Questo richiederà un minimo di ricerca.
 
-const kilometers = parseInt(prompt("quanti chilometri devi percorrere ?"));
+const kilometers = parseInt(prompt("quanti chilometri devi percorrere?"));
 console.log(kilometers);
+
+const passengerAge = parseInt(prompt("quanti anni hai?"));
+console.log(passengerAge);
+
+const fullTicketPrice = kilometers * 0.21;
+console.log(`Your not discounted ticket price is: ${fullTicketPrice}` Euros);
