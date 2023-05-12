@@ -44,14 +44,25 @@ console.log(`Your not discounted ticket price is: ${fullTicketPrice} Euros`);
 let discountedticketPrice;
 
 if (passengerAge < 18) {
-    discountedticketPrice = fullTicketPrice - (fullTicketPrice * 0.2);
     // allora applica sconto del 20 % sul prezzo totale 
+    discountedticketPrice = fullTicketPrice - (fullTicketPrice * 0.2);
+
+    // Print result to page 
+    document.getElementById("your-ticket-price").innerHTML = `Il prezzo intero del tuo biglietto è: ${fullTicketPrice}€.`;
+
+    document.getElementById("your-discounted-ticket-price").innerHTML = `Hai diritto allo sconto giovani del 20%, per cui il prezzo finale del tuo biglietto è: ${discountedticketPrice}€`;
+
 } else if (passengerAge > 65) {
-    discountedticketPrice = fullTicketPrice - (fullTicketPrice * 0.4);
     // allora applica sconto del 40 % sul prezzo totale 
+    discountedticketPrice = fullTicketPrice - (fullTicketPrice * 0.4);
+    // Print result to page 
+    document.getElementById("your-ticket-price").innerHTML = `Il prezzo intero del tuo biglietto è: ${fullTicketPrice}€.`;
+
+    document.getElementById("your-discounted-ticket-price").innerHTML = `Ha diritto allo sconto anziani del 40%, per cui il prezzo finale del suo biglietto è: ${discountedticketPrice}€`;
 } else {
-    discountedticketPrice = fullTicketPrice;
-    // il prezzo rimane quello calcolato
+    // Print result to page 
+    document.getElementById("your-ticket-price").innerHTML = `Il prezzo del tuo biglietto è: ${fullTicketPrice}€`;
+
 }
 
 // Fix result with two decimals
@@ -59,5 +70,5 @@ discountedticketPrice = discountedticketPrice.toFixed(2);
 
 console.log(`Your discounted ticket price is: ${discountedticketPrice} Euros`);
 
-// Print result to page 
-document.getElementById("your-ticket-price").innerHTML = `Il prezzo del tuo biglietto è: ${discountedticketPrice}€`;
+// // Print result to page 
+// document.getElementById("your-ticket-price").innerHTML = `Il prezzo del tuo biglietto è: ${discountedticketPrice}€`;
