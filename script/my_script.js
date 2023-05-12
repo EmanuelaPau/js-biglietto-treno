@@ -46,7 +46,7 @@ if (passengerAge < 18) {
     // allora applica sconto del 40 % sul prezzo totale 
     discountedticketPrice = fullTicketPrice - (fullTicketPrice * 0.4);
     // Print result to page 
-    document.getElementById("your-ticket-price").innerHTML = `Il prezzo intero del tuo biglietto è: ${fullTicketPrice}€.`;
+    document.getElementById("your-ticket-price").innerHTML = `Il prezzo intero del suo biglietto è: ${fullTicketPrice}€.`;
 
     document.getElementById("your-discounted-ticket-price").innerHTML = `Ha diritto allo sconto anziani del 40%, per cui il prezzo finale del suo biglietto è: ${discountedticketPrice}€`;
 } else {
