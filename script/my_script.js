@@ -10,17 +10,26 @@
 
 // Ask length of the trip
 const kilometers = parseInt(prompt("quanti chilometri devi percorrere?"));
-console.log(kilometers);
+
+// Lenght of the trip written in numbers verification
+console.log(typeof kilometers)
+if (isNaN(kilometers)) {
+    console.log("C'è un errore nella compilazione dei chilometri da percorrere")
+    document.getElementById("alert").innerHTML = `È stato rilevato un errore nel campo: chilometri da percorrere. Per favore ricaricare la pagina e riscrivere il numero di chilometri in forma numerica`;
+
+    throw new Error("Age was badly written!");
+}
+
 
 // Ask passenger Age
 const passengerAge = parseInt(prompt("quanti anni hai?"));
 console.log(passengerAge);
 
-// Verifica correttezza del campo Eta
+// Age written in numbers verification
 console.log(typeof passengerAge)
 if (isNaN(passengerAge)) {
     console.log("C'è un errore nella compilazione dell'età")
-    document.getElementById("alert").innerHTML = `È stato rilevato un errore nel campo: età del passeggero. Per favore riscrivere l'età in forma numerica`;
+    document.getElementById("alert").innerHTML = `È stato rilevato un errore nel campo: età del passeggero. Per favore ricaricare la pagina e riscrivere l'età in forma numerica`;
 
     throw new Error("Age was badly written!");
 }
