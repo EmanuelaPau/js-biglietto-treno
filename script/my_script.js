@@ -37,3 +37,5 @@ if (passengerAge < 18) {
 discountedticketPrice = discountedticketPrice.toFixed(2);
 
 console.log(`Your discounted ticket price is: ${discountedticketPrice} Euros`);
+
+document.getElementById("your-ticket-price").innerHTML = `Your discounted ticket price is: ${discountedticketPrice}€`;
